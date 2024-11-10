@@ -16,13 +16,13 @@
 #define GPIOE_ADDRESS 0x40021000UL
 
 //GPIO Registers
-#define GPIOB_MODER (*(uint32_t*)(GPIO_ADDRESS+0x00UL))
-#define GPIOB_OTYPER (*(uint32_t*)(0x40020400UL+0x04UL))
-#define GPIOB_OSPEEDR (*(uint32_t*)(0x40020400UL+0x08UL)
-#define GPIOB_PUPDR (*(uint32_t*)(0x40020400UL+0x0CUL))
-#define GPIOB_IDR (*(uint32_t*)(0x40020400UL+0x10UL))
-#define GPIOB_ODR (*(uint32_t*)(0x40020400UL + 0x14UL))
-#define GPIOB_BSRR (*(uint32_t*)(0x40020400UL + 0x18UL))
+#define GPIOB_MODER (*(uint32_t*)(GPIOB_ADDRESS+0x00UL))
+#define GPIOB_OTYPER (*(uint32_t*)(GPIOB_ADDRESS+0x04UL))
+#define GPIOB_OSPEEDR (*(uint32_t*)(GPIOB_ADDRESS+0x08UL)
+#define GPIOB_PUPDR (*(uint32_t*)(GPIOB_ADDRESS+0x0CUL))
+#define GPIOB_IDR (*(uint32_t*)(GPIOB_ADDRESS+0x10UL))
+#define GPIOB_ODR (*(uint32_t*)(GPIOB_ADDRESS + 0x14UL))
+#define GPIOB_BSRR (*(uint32_t*)(GPIOB_ADDRESS + 0x18UL))
 
 //GPIO Pin 7 addresses
 #define GPIO_MODER_PIN7 0x4000UL //(1 << 15)
